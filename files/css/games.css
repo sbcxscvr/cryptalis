@@ -61,3 +61,7 @@ body {
     color: #ffffff;
     margin-top: 1px;
 }
+
+.title-underline {
+    margin-top: -16px;
+}
