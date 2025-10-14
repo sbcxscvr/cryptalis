@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    touch-action: none;
+}
+
+@media (max-width: 360px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 720px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1080px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1440px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1441px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+#hud {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 8px;
+    z-index: 10;
+    user-select: none;
+}
+
+#mobile-controls {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    z-index: 10;
+    user-select: none;
+}
+
+.control-button {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    touch-action: none;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+.control-button:active {
+    background: rgba(255, 255, 255, 0.6);
+    user-select: none;
+}
+
+#back-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    z-index: 10;
+    user-select: none;
+    transition: background 0.3s;
+}
+
+#back-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+    user-select: none;
+}

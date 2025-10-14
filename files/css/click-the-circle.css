@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    user-select: none;
+}
+
+@media (max-width: 360px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 720px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1080px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1440px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1441px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+h1 {
+    margin-top: 20px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    user-select: none;
+}
+
+#score, #timer {
+    font-size: 20px;
+    background: rgba(0,0,0,0.3);
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    user-select: none;
+}
+
+#circle {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(circle, #ff6a00, #ee0979);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
+    animation: pulse 1s infinite;
+    transition: transform 0.1s ease;user-select: none;
+}
+
+#circle:hover {
+    transform: scale(1.1);
+    user-select: none;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(255, 105, 180, 1);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
+    }
+}
+
+.controls {
+    margin-top: 20px;
+    z-index: 10;
+    user-select: none;
+}
+
+.back-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.9);
+    color: #3a3a3a;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    font-weight: bold;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    user-select: none;
+}
+
+.back-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+    user-select: none;
+}

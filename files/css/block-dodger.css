@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+@media (max-width: 360px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 720px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 1080px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1440px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1441px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+.game-container {
+    text-align: center;
+    user-select: none;
+}
+
+canvas {
+    border: 2px solid #000;
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    border-color: gray;
+    user-select: none;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    user-select: none;
+}
+
+.back-button:hover {
+    background-color: #555;
+    user-select: none;
+}
+
+.controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+
+.control-btn {
+    width: 100px;
+    height: 60px;
+    margin: 0 10px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    touch-action: none;
+    user-select: none;
+}
+
+.control-btn:active {
+    background-color: rgba(0,0,0,0.8);
+    user-select: none;
+}

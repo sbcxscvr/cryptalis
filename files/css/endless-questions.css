@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background: linear-gradient(45deg, #ff6ec7, #8e44ad, #3498db, #1abc9c);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+     padding: 0;
+    cursor: pointer;
+    text-align: center;
+    overflow-y: auto;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.question {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    animation: fadeIn 0.3s ease-in;
+    color: #f5a623;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.question:hover {
+    color: #f39c12;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.back-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

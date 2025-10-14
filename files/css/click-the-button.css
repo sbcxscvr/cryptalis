@@ -1,0 +1,66 @@
+body {
+    background: linear-gradient(45deg, #ff6347, #ff8c00, #ffd700, #32cd32);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+* {
+    user-select: none;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.button {
+    background-color: #ff6347;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+}
+
+.score {
+    position: absolute;
+    top: 20px;
+    font-size: 2rem;
+    color: white;
+}
+
+.back-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
