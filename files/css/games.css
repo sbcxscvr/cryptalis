@@ -79,3 +79,12 @@ body {
 .title-underline {
     margin-top: -16px;
 }
+
+.h2_back-404 {
+    text-align: center;
+}
+
+.a_back-404 {
+    color: #9a9a9a;
+    text-decoration: none;
+}
