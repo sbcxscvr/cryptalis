@@ -9,6 +9,16 @@ body {
     user-select: none;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(79, 232, 227, 1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#21d4fd, #b721ff);
+    border-radius: 100px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
