@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Cryptalis | Rock, Paper, Scissors</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="google" content="notranslate">
+        <link rel="stylesheet" href="../../css/rock-paper-scissors.css">
+        <link rel="icon" type="image/png" href="../../files/favicon/favicon-64.png">
+        <script src="../../js/website-protection.js" defer></script>
+        <script src="../../js/rock-paper-scissors.js" defer></script>
+    </head>
+    <body>
+        <a href="../games.html" class="back-btn">Back</a>
+        <h1>Rock, Paper, Scissors</h1>
+        <div class="choices">
+            <button onclick="play('rock')" id="rockBtn">🪨 Rock</button>
+            <button onclick="play('paper')" id="paperBtn">📄 Paper</button>
+            <button onclick="play('scissors')" id="scissorsBtn">✂️ Scissors</button>
+        </div>
+        <div id="result" class="result">Make your move!</div>
+        <div id="choiceContainer" class="choice-container">
+            <div id="playerChoiceContainer">
+                <h3>Your choice:</h3>
+                <img id="playerChoice" src="" alt="Player's choice">
+            </div>
+            <div id="computerChoiceContainer">
+                <h3>AI's choice:</h3>
+                <img id="computerChoice" src="" alt="Computer's choice">
+            </div>
+        </div>
+        <div class="scoreboard">
+            Player: <span id="playerScore">0</span> | Computer: <span id="computerScore">0</span>
+        </div>
+    </body>
+</html>

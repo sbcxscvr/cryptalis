@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Cryptalis | Colorblind Test</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="google" content="notranslate">
+        <link rel="stylesheet" href="../../css/colorblind-test.css">
+        <link rel="icon" type="image/png" href="../../files/favicon/favicon-64.png">
+        <script src="../../js/website-protection.js" defer></script>
+        <script src="../../js/colorblind-test.js" defer></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="card" id="card">
+                <header>
+                    <div>
+                        <h1>Colorblind Test - Step by Step</h1>
+                    </div>
+                </header>
+                <main style="margin-top:14px">
+                    <section id="startScreen">
+                        <p>The test will show multiple Ishihara-like plates one by one. Make sure your screen is set to normal settings and the room is well lit.</p>
+                        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+                            <button id="startBtn" class="btn primary">Start Test</button>
+                            <a href="../games.html" class="btn ghost">Back</a>
+                        </div>
+                    </section>
+                    <section id="testScreen" hidden>
+                        <div class="progressWrap">
+                            <div style="display:flex;justify-content:space-between;font-size:0.9rem">
+                                <div id="stepText">Plate 1</div>
+                                <div id="hint" class="muted">Tip: Distance ~50–70 cm</div>
+                            </div>
+                            <div class="progress" aria-hidden="true" style="margin-top:8px"><i id="progressBar"></i></div>
+                        </div>
+                        <div id="canvasWrap" class="center" style="margin-top:12px">
+                            <canvas id="plateCanvas" width="600" height="600" aria-label="Ishihara-like plate"></canvas>
+                        </div>
+                        <div class="choices" id="choices"></div>
+                        <div class="controls">
+                            <div style="display:flex;gap:8px">
+                                <button id="prevBtn" class="btn" disabled>Back</button>
+                                <button id="nextBtn" class="btn primary">Next</button>
+                            </div>
+                            <div class="muted" id="progressPercent">0%</div>
+                        </div>
+                    </section>
+                    <section id="results" hidden>
+                        <h3>Results</h3>
+                        <p id="scoreText"></p>
+                        <div id="perPlate"></div>
+                        <div style="margin-top:10px;display:flex;gap:8px">
+                            <button id="restartBtn" class="btn">Restart</button>
+                            <button id="downloadBtn" class="btn primary">Download Results</button>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>

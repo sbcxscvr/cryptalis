@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cryptalis | Hangman Game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="google" content="notranslate">
+        <link rel="stylesheet" href="../../css/hangman-game.css">
+        <link rel="icon" type="image/png" href="../../files/favicon/favicon-64.png">
+        <script src="../../js/website-protection.js" defer></script>
+        <script src="../../js/hangman-game.js" defer></script>
+    </head>
+    <body>
+        <button class="back-button" onclick="window.location.href='../games.html'">Back</button>
+        <h1>Hangman Game</h1>
+        <div id="hangman">
+            <pre>
+                O
+                /|\
+                / \
+            </pre>
+        </div>
+       <div class="word" id="wordDisplay"></div>
+       <div class="input-container">
+           <input type="text" id="letterInput" maxlength="1" autofocus>
+           <button onclick="guessLetter()">Guess</button>
+       </div>
+       <div class="scoreboard">
+           <div>Attempts Left: <span id="attemptsLeft">6</span></div>
+           <div>Guessed Letters: <span id="guessedLetters">None</span></div>
+       </div>
+    </body>
+</html>
