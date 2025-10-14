@@ -55,3 +55,9 @@ body {
     word-break: break-word;
     overflow-wrap: break-word;
 }
+
+.text-404 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 1px;
+}
