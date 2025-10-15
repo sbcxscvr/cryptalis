@@ -1,0 +1,13 @@
+© 2025 Christian_001 Technologies. All rights reserved.
+Author: Christian Kožuh
+Country: Germany
+
+License Agreement
+-----------------
+This software may be copied and used for personal purposes.
+
+However, it is strictly prohibited to publish, distribute, or otherwise make this software or any part of it publicly available.
+
+The source code of this software is protected and must not be modified, unlocked, or otherwise tampered with.
+
+Any violation of these terms may result in legal consequences.
